@@ -1,0 +1,13 @@
+<div class="p-4 bg-white rounded shadow">
+  <form (ngSubmit)="onSubmit()">
+    <div class="mb-4">
+      <label class="block">Start Point</label>
+      <input [(ngModel)]="start" name="start" class="border rounded w-full p-2" required />
+    </div>
+    <div class="mb-4">
+      <label class="block">End Point</label>
+      <input [(ngModel)]="end" name="end" class="border rounded w-full p-2" required />
+    </div>
+    <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded">Plan Trip</button>
+  </form>
+</div>

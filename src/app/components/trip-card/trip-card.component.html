@@ -1,0 +1,9 @@
+<div class="p-3 bg-white rounded shadow mb-2 border-l-4"
+     [ngClass]="{
+       'border-green-500': trip.type === 'continued',
+       'border-yellow-500': trip.type === 'disjoint',
+       'border-blue-500': trip.type === 'repeated'
+     }">
+  Trip from <strong>{{ trip.start }}</strong> to <strong>{{ trip.end }}</strong>
+  <div class="text-xs text-gray-500 mt-1">Type: {{ trip.type }}</div>
+</div>
